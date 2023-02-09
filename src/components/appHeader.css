@@ -1,7 +1,5 @@
 .header-nav-body {
     margin-bottom: -4px;
-    /* position: relative; */
-    /* left: 25vw */
 }
 
 .header-link {
@@ -16,14 +14,13 @@
 }
 
 .header-link>ul>li:hover {
-    /* color: blue; */
     background-color: rgba(210, 210, 252, 0.594);
     border-radius: 5px;
     text-decoration: line-through;
 }
 
 .header-icon {
-    width: 3.15rem;
+    width: 2.8rem;
     font-size: 1.35rem;
 }
 
@@ -43,19 +40,3 @@ html:not([dir=rtl]) .breadcrumb-item+.breadcrumb-item::before {
 .header-nav .show > .nav-link, .header-nav .nav-link.active > .header-text{
     color: var(--link-color);
 }
-
-/* @media screen and (min-width: 768px) {
-    .header-nav-body {
-        margin-bottom: -4px;
-        position: relative;
-        left: 18.5rem
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .header-nav-body {
-        margin-bottom: -4px;
-        position: relative;
-        left: 5rem
-    }
-} */

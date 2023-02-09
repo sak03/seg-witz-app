@@ -31,22 +31,15 @@ const Login = () => {
     admin: {
       email: 'admin@testmail.com',
       password: 'Admin@123',
-      name: "Prashant Vadhawa",
+      name: "Sartaj Alam",
       role:"Admin",
       status:"Active"
     },
-    teacher: {
-      email: 'teacher@testmail.com',
-      password: 'Teacher@123',
-      name: "Mahfooz Saifi",
-      role:"Teacher",
-      status:"Active"
-    },
-    student: {
-      email: 'student@testmail.com',
-      password: 'Student@123',
-      name: "Sartaj Alam",
-      role:"Student",
+    User: {
+      email: 'user@testmail.com',
+      password: 'User@123',
+      name: "Syed Atiyab Ali",
+      role:"User",
       status:"Active"
     },
   }
@@ -75,11 +68,11 @@ const Login = () => {
         dispatch(loginMode({userModeValue : 1}))
         dispatch(userLoginInfo(hardcodedCred.admin))
 
-      } else if ((data.email === hardcodedCred.teacher.email) && (data.password === hardcodedCred.teacher.password)) {
+      } else if ((data.email === hardcodedCred.User.email) && (data.password === hardcodedCred.User.password)) {
         userMode = 2;
         navigate("/dashboard");
         dispatch(loginMode({userModeValue : 2}))
-        dispatch(userLoginInfo(hardcodedCred.teacher))
+        dispatch(userLoginInfo(hardcodedCred.User))
       }
       else if ((data.email === hardcodedCred.student.email) && (data.password === hardcodedCred.student.password)) {
         userMode = 3;

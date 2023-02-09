@@ -8,14 +8,14 @@ const AppFooter = () => {
     <CFooter>
       <div>
         <span className='text-primary'>
-          Life School
+         SEGWITZ
         </span>
         <span className="ms-1">&copy; {year} </span>
       </div>
       <div className="ms-auto">
         <span className="me-1">Powered by</span>
         <span className='text-primary'>
-        Life School
+        SEGWITZ
         </span>
       </div>
     </CFooter>

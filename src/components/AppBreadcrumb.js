@@ -7,7 +7,6 @@ import { CBreadcrumb, CBreadcrumbItem } from '@coreui/react'
 
 const AppBreadcrumb = () => {
   const currentLocation = useLocation().pathname
-
   const getRouteName = (pathname, routes) => {
     const currentRoute = routes.find((route) => route.path === pathname)
     return currentRoute ? currentRoute.name : false
@@ -33,10 +32,10 @@ const AppBreadcrumb = () => {
 
   return (
     <CBreadcrumb className="m-0 ms-2" style={{fontSize:"0.75rem"}}>
-      {console.log(currentLocation, "location")}
-      {currentLocation !== "/dashboard" && (
-        <Link className="breadcrumb-item" to={"dashboard"}>
-          <CBreadcrumbItem>Dashboard</CBreadcrumbItem>
+      {/* {console.log(currentLocation, "location")} */}
+      {currentLocation !== "/home" && (
+        <Link className="breadcrumb-item" to={"home"}>
+          <CBreadcrumbItem>Home</CBreadcrumbItem>
         </Link>
       )}
       {breadcrumbs.map((breadcrumb, index) => {

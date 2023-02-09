@@ -8,8 +8,8 @@ import {
 import { Divider } from 'primereact/divider';
 import { useSelector } from "react-redux";
 
-const Profile = () => {
-  const userInfo = useSelector((state)=>state.userLoginInfo);
+const About = () => {
+  const userInfo = useSelector((state) => state.userLoginInfo);
 
   return (
     <div>
@@ -18,7 +18,7 @@ const Profile = () => {
           <div className=" ml-2">
             <img
               className="mr-2"
-              src='student.jpg'
+              src='candidate1.jpeg'
               width={125}
               shape="circle"
             />
@@ -48,17 +48,17 @@ const Profile = () => {
           </div>
         </div>
         <div className="col-sm-12 col-md-6 col-lg-6 d-flex mb-2">
-          </div>
+        </div>
       </div>
-      <Divider/>
+      <Divider />
       <div>
         <div>
-        There are so many ways to describe a good student. The most common terms are hardworking, being good in academics, submitting work on time, being regular, participating in-class activities, and achieving high grades.
-        Good grades, a positive attitude and hard-working are all qualities of a good student. A good student doesn't always depend on those three qualities though. A good student comes to class and pays attention to the teacher. Self-discipline and the time management are also important factors to being a good student.
+          We support students in developing their ability to solve problems, reason mathematically, and connect the mathematics they are learning to the real world around them. Users provide ongoing meaningful feedback to all students about their mathematics achievement, which helps to build confidence.
+          We makes maths fun to learn and easy to do. Our teaching style is unique, which has also helped me improve my arithmetic. Our students motivates me to work hard and avoid any other means like cheating to get good grades. As a maths User we corrects our homework and helps students to use our mathematics in practical life.
         </div>
       </div>
     </div>
   )
 }
 
-export default Profile
+export default About

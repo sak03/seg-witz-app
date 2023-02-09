@@ -10,10 +10,10 @@ import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
 import { MdAssignment } from "react-icons/md";
 import { useSelector } from "react-redux";
-import "./dashboard.css";
+import "./home.css";
 import Chart from 'react-apexcharts'
 
-const Dasshboard = () => {
+const Home = () => {
     const userInfo = useSelector((state)=>state.userLoginInfo);
     const userMode = useSelector((state)=>state.userInfo.userModeValue);
     const [hsurvey, sethsurvey] = useState({
@@ -564,4 +564,4 @@ const Dasshboard = () => {
     )
 }
 
-export default Dasshboard
+export default Home
