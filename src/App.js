@@ -39,10 +39,8 @@ class App extends Component {
             />
             <Route exact path="/register" name="Register Page" element={<Register />} />
             <Route exact path='/' element={<ProtectedRoutes />}>
-              <Route exact path="*" name="dashboard" element={<DefaultLayout />} />
+              <Route exact path="*" name="Home" element={<DefaultLayout />} />
             </Route>
-            {/* <Route path="*" name="dashboard" element={<DefaultLayout />} /> */}
-            {/* <Route path='/' name="Login Page" element={<ProtectedRoutes />} /> */}
           </Routes>
         </Suspense>
       </HashRouter>

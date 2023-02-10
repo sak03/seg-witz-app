@@ -64,21 +64,15 @@ const Login = () => {
     onSubmit: (data) => {
       if ((data.email === hardcodedCred.admin.email) && (data.password === hardcodedCred.admin.password)) {
         userMode = 1;
-        navigate("/dashboard");
+        navigate("/home");
         dispatch(loginMode({userModeValue : 1}))
         dispatch(userLoginInfo(hardcodedCred.admin))
 
       } else if ((data.email === hardcodedCred.User.email) && (data.password === hardcodedCred.User.password)) {
         userMode = 2;
-        navigate("/dashboard");
+        navigate("/home");
         dispatch(loginMode({userModeValue : 2}))
         dispatch(userLoginInfo(hardcodedCred.User))
-      }
-      else if ((data.email === hardcodedCred.student.email) && (data.password === hardcodedCred.student.password)) {
-        userMode = 3;
-        navigate("/dashboard");
-        dispatch(loginMode({userModeValue : 3}))
-        dispatch(userLoginInfo(hardcodedCred.student))
       }
       else {
         alert('Wrong email or password combination');
