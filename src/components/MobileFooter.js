@@ -9,6 +9,7 @@ import {
     FaUserAlt,
     FaUniversity,
     FaHouseUser,
+    FaBlog,
 } from "react-icons/fa";
 
 const MobileFooter = () => {
@@ -27,10 +28,20 @@ const MobileFooter = () => {
                         </span>
                         <span className="header-text" style={{ paddingLeft: "8px" }}>Home</span>
                     </CNavLink>
-
                 </CNavItem>
                 <CNavItem>
-
+                  <CNavLink
+                    to="/about"
+                    className="mx-2 header-link"
+                    component={NavLink}
+                  >
+                    <span>
+                      <FaBlog className="header-icon" />
+                    </span>
+                    <span className="header-text mx-2">Blogs</span>
+                  </CNavLink>
+                </CNavItem>
+                <CNavItem>
                     <CNavLink
                         to="/about"
                         className="mx-2 header-link"

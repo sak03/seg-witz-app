@@ -14,6 +14,7 @@ import {
   FaUserAlt,
   FaUniversity,
   FaHouseUser,
+  FaBlog,
 } from "react-icons/fa";
 import { AppBreadcrumb } from './index'
 import { AppHeaderDropdown } from './header/index'
@@ -30,7 +31,7 @@ const AppHeader = () => {
         <CContainer fluid>
           <div className="d-flex justify-content-start">
             <CHeaderToggler className="ps-1">
-               <img src={logo} className="sidebar-brand-full" />
+              <img src={logo} className="sidebar-brand-full" />
             </CHeaderToggler>
           </div>
           <div className="row">
@@ -46,6 +47,18 @@ const AppHeader = () => {
                       <FaHouseUser className="header-icon" />
                     </span>
                     <span className="header-text mx-2"> Home</span>
+                  </CNavLink>
+                </CNavItem>
+                <CNavItem>
+                  <CNavLink
+                    to="/about"
+                    className="mx-4 header-link"
+                    component={NavLink}
+                  >
+                    <span>
+                      <FaBlog className="header-icon" />
+                    </span>
+                    <span className="header-text mx-2">Blogs</span>
                   </CNavLink>
                 </CNavItem>
                 <CNavItem>

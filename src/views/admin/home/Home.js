@@ -23,6 +23,7 @@ const Home = () => {
             emailId: "doe.john@mail.com",
             mobileNumber: "+1 598 845 5698",
             Designation: "Teacher",
+            feedback:"Good work"
         },
         {
             id: "1002",
@@ -31,6 +32,7 @@ const Home = () => {
             emailId: "reyan.walker@mail.com",
             mobileNumber: "+96 894 265 9874",
             Designation: "Developer",
+            feedback:"Interesting"
         },
         {
             id: "1003",
@@ -39,6 +41,7 @@ const Home = () => {
             emailId: "prakash.singh@mail.com",
             mobileNumber: "+91 894 123 6548",
             Designation: "Govt. officer",
+            feedback:"Helpfull"
         },
         {
             id: "1004",
@@ -47,6 +50,7 @@ const Home = () => {
             emailId: "prity.yadav@mail.com",
             mobileNumber: "+91 456 987 4261",
             Designation: "Student",
+            feedback:"Awesome"
         },
         {
             id: "1005",
@@ -55,6 +59,7 @@ const Home = () => {
             emailId: "piter.parker@mail.com",
             mobileNumber: "+1 945 569 1254",
             Designation: "Professor",
+            feedback:"Helpfull"
         },
     ]);
 
@@ -276,7 +281,8 @@ const Home = () => {
                                     'emailId',
                                     'mobileNumber',
                                     'feedbackDate',
-                                    'Designation'
+                                    'Designation',
+                                    'feedback'
                                 ]}
                             >
                                 <Column field="name" header="Name" sortable></Column>
@@ -290,10 +296,15 @@ const Home = () => {
                                     header="Mobile No."
                                     sortable
                                 ></Column>
-                                <Column field="feedbackDate" header="Feedback Date" sortable></Column>
                                 <Column
                                     field="Designation"
                                     header="Designation"
+                                    sortable
+                                ></Column>
+                                <Column field="feedbackDate" header="Feedback Date" sortable></Column>
+                                <Column
+                                    field="feedback"
+                                    header="Feedback"
                                     sortable
                                 ></Column>
                             </DataTable>
