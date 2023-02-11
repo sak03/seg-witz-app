@@ -1,10 +1,20 @@
 # seg-witz-app
 
 ### This is simple blogging Application 
-### Steps to run the code
-#### clone code by "https://github.com/sak03/seg-witz-app.git"
-#### npm install
-#### npm start
+
+### Setup
+
+1. First clone the repo
+
+   > `git clone https://github.com/sak03/seg-witz-app.git`
+
+2. Install all the npm packages
+
+   > `npm install`
+
+3. Run the code
+   > `npm start`
+
 
 #### There is two UI for different users i.e admin UI & user UI
 
