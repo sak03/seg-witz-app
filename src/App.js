@@ -13,8 +13,8 @@ import "primeicons/primeicons.css"; //icons
 import ProtectedRoutes from './auth/ProtectedRoutes';
 
 const loading = (
-  <div className="pt-3 text-center">
-    <div className="sk-spinner sk-spinner-pulse"></div>
+  <div classNameName="pt-3 text-center">
+    <div classNameName="sk-spinner sk-spinner-pulse"></div>
   </div>
 )
 

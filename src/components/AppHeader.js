@@ -51,7 +51,7 @@ const AppHeader = () => {
                 </CNavItem>
                 <CNavItem>
                   <CNavLink
-                    to="/about"
+                    to="/blogs"
                     className="mx-4 header-link"
                     component={NavLink}
                   >

@@ -21,24 +21,24 @@ const AppHeaderDropdown = () => {
 
   return (
     <CDropdown variant="nav-item">
-      <CDropdownToggle placement="bottom-end" className="py-0" caret={false}>
+      <CDropdownToggle placement="bottom-end" classNameName="py-0" caret={false}>
         <Avatar
           label={userInfo?.name.charAt(0).toUpperCase()}
-          className="p-2 my-1"
+          classNameName="p-2 my-1"
           size="small"
           shape="circle"
         />
       </CDropdownToggle>
-      <CDropdownMenu className="pt-0" placement="bottom-end">
-        <CDropdownHeader className="bg-light fw-semibold py-2">{userInfo?.role}</CDropdownHeader>
+      <CDropdownMenu classNameName="pt-0" placement="bottom-end">
+        <CDropdownHeader classNameName="bg-light fw-semibold py-2">{userInfo?.role}</CDropdownHeader>
         <CDropdownItem>
-          <CIcon icon={cilUser} className="me-2" />
+          <CIcon icon={cilUser} classNameName="me-2" />
           {userInfo?.name}
         </CDropdownItem>
         <CDropdownDivider />
         <CDropdownItem >
-          <CIcon icon={cilLockLocked} className="me-2" />
-          <a href="#" rel="noopener noreferrer" className='text-dark' style={{textDecoration:"none"}}>
+          <CIcon icon={cilLockLocked} classNameName="me-2" />
+          <a href="#" rel="noopener noreferrer" classNameName='text-dark' style={{textDecoration:"none"}}>
             Log out
           </a>
         </CDropdownItem>

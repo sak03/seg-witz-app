@@ -7,14 +7,14 @@ const AppFooter = () => {
   return (
     <CFooter>
       <div>
-        <span className='text-primary'>
+        <span classNameName='text-primary'>
          SEGWITZ
         </span>
-        <span className="ms-1">&copy; {year} </span>
+        <span classNameName="ms-1">&copy; {year} </span>
       </div>
-      <div className="ms-auto">
-        <span className="me-1">Powered by</span>
-        <span className='text-primary'>
+      <div classNameName="ms-auto">
+        <span classNameName="me-1">Powered by</span>
+        <span classNameName='text-primary'>
         SEGWITZ
         </span>
       </div>

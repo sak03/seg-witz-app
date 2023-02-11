@@ -2,6 +2,12 @@
     margin-bottom: -4px;
 }
 
+@media (min-width: 414px) {
+    .mobile-mode-footer{
+        display: none !important;
+    }
+  }
+
 .header-link {
     text-decoration: none;
     display: flex;
