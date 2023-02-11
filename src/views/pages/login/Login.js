@@ -68,15 +68,15 @@ const Login = () => {
         dispatch(loginMode({userModeValue : 1}))
         dispatch(userLoginInfo(hardcodedCred.admin))
 
-      } else if ((data.email === hardcodedCred.User.email) && (data.password === hardcodedCred.User.password)) {
-        userMode = 2;
-        navigate("/home");
-        dispatch(loginMode({userModeValue : 2}))
-        dispatch(userLoginInfo(hardcodedCred.User))
-      }
+      } 
+      // else if ((data.email === hardcodedCred.User.email) && (data.password === hardcodedCred.User.password)) {
+      //   userMode = 2;
+      //   navigate("/home");
+      //   dispatch(loginMode({userModeValue : 2}))
+      //   dispatch(userLoginInfo(hardcodedCred.User))
+      // }
       else {
         alert('Wrong email or password combination');
-        // console.log(hardcodedCred.platFormAdmin.email, hardcodedCred.platFormAdmin.password);
       }
       localStorage.setItem("userMode", userMode);
       localStorage.setItem("userInfo", JSON.stringify(hardcodedCred));
@@ -119,7 +119,7 @@ const Login = () => {
                           (classNames({
                             "p-invalid": isLoginFormFieldValid("email"),
                           }),
-                            "p-inputtext-sm w-100 borderClass")
+                            "p-inputtext-sm w-100 borderclassName")
                         }
                       />
                       <label htmlFor="email">Username</label>
@@ -150,6 +150,9 @@ const Login = () => {
                     <span
                       className="mx-2 text-primary"
                       style={{ cursor: "pointer" }}
+                      onClick={()=>{
+                        alert("Currently forgot password is not working. Please try after some time.")
+                      }}
                     >
                       Forgot password?
                     </span>
@@ -165,11 +168,17 @@ const Login = () => {
                       </CButton>
                     </CCol>
                   </CRow>
-                  <div className="text-right mt-3">
+                  <div 
+                  className="text-right mt-3 text-primary" 
+                  style={{cursor:"pointer"}}
+                  onClick={()=>{
+                    alert("The registration form is under maintenance. Please try after some time.")
+                  }}
+                  >
                     <p>
                       Don't have an account ?
                       <span className="mx-2">
-                        <Link to='/register' style={{ textDecoration: "none" }}>Sign Up</Link>
+                        {/* <Link to='/register' style={{ textDecoration: "none" }}>Sign Up</Link> */}
 
                       </span>
                     </p>

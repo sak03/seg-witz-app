@@ -9,6 +9,7 @@ import { classNames } from "primereact/utils";
 import { useFormik } from "formik";
 import { Dropdown } from 'primereact/dropdown';
 import Fitness from './tabs/Fitness';
+import './blog.css'
 
 const Blogs = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -38,10 +39,9 @@ const Blogs = () => {
             if (!data.summary) {
                 errors.summary = "Please enter summary.";
             }
-            else if (data.summary.length < 100) {
-                errors.summary = "Summary length must be greater than 100 Charater. " + (100 - data.summary.length) + " charater(s) is left.";
+            else if (data.summary.length < 50) {
+                errors.summary = "Summary length must be greater than 50 Charater. " + (50 - data.summary.length) + " charater(s) is left.";
             }
-            // console.log("summary>>>", data.summary);
             return errors;
         },
         onSubmit: (data) => {

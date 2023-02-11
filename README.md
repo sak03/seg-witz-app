@@ -10,7 +10,7 @@
 
 ## Credentials 
 #### Admin: email: admin@testmail.com, password: Admin@123
-#### User: email: user@testmal.com, password: User@123
+#### User: email: user@testmal.com, password: User@123 (under maintenance)
 
 #### Admin can see all the list of blogs.
 #### User can see the limited list of blogs
